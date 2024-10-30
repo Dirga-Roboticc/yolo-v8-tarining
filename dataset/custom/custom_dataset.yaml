@@ -1,0 +1,55 @@
+train: /home/user/Documents/yolo-v8-tarining/dataset/custom/train/images
+val: /home/user/Documents/yolo-v8-tarining/dataset/custom/val/images
+
+nc: 18  # num classes
+names: [
+  "Accounts",
+  "Activity Bar",
+  "Close",
+  "Editor",
+  "Explorer",
+  "Extensions",
+  "Manage",
+  "Maximize",
+  "Minimize",
+  "Panel",
+  "Primary Side Bar",
+  "Run and Debug",
+  "Search",
+  "Search Bar",
+  "Source Control",
+  "Status Bar",
+  "Testing",
+  "Top Bar"
+]
+# Pengaturan augmentasi
+augment:
+  # - type: hflip
+  #   probability: 0.5
+  # - type: vflip
+  #   probability: 0.5
+  # - type: rotate
+  #   angle: 15
+  #   probability: 0.5
+  - type: scale
+    factor: 0.5
+    probability: 0.5
+  - type: gauss_noise
+    mean: 0
+    std: 25
+    probability: 0.5  # Menambahkan Gaussian noise
+  - type: gaussian_blur
+    kernel_size: 5
+    probability: 0.5  # Menambahkan Gaussian blur
+  - type: random_brightness
+    factor: 0.2
+    probability: 0.5  # Mengubah brightness
+  - type: random_contrast
+    factor: 0.2
+    probability: 0.5  # Mengubah contrast
+  - type: random_saturation
+    factor: 0.2
+    probability: 0.5  # Mengubah saturation
+  - type: random_hue
+    factor: 0.1
+    probability: 0.5  # Mengubah hue

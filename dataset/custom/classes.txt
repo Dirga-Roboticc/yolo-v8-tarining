@@ -1,0 +1,18 @@
+Accounts
+Activity Bar
+Close
+Editor
+Explorer
+Extensions
+Manage
+Maximize
+Minimize
+Panel
+Primary Side Bar
+Run and Debug
+Search
+Search Bar
+Source Control
+Status Bar
+Testing
+Top Bar
